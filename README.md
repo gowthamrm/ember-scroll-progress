@@ -1,6 +1,25 @@
 # ember-scroll-progress
 
-This README outlines the details of collaborating on this Ember addon.
+A simple ember addon component for displaying an amount a page is scrolled via a progress bar.
+Scroll the page to view this page's progress on top.
+
+## Usage
+
+```handlebars
+
+  {{#ember-scroll-progress
+    progressContainerClass="progress-container"
+    progressBarClass="progress-bar"
+  }}
+    <!-- page content -->
+  {{/ember-scroll-progress}}
+
+```
+
+## Parameters
+
+* `progressContainerClass` will have the custom style elements for the progress bar container. This class can be used to position the progress bar.
+* `progressBarClass` can be used to customize the progress bar.
 
 ## Installation
 
