@@ -3,6 +3,8 @@
 A simple ember addon component for displaying an amount a page is scrolled via a progress bar.
 Scroll the page to view this page's progress on top.
 
+[DEMO](https://gowthamrm.github.io/ember-scroll-progress/)
+
 ## Usage
 
 ```handlebars

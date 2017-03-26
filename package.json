@@ -1,6 +1,6 @@
 {
   "name": "ember-scroll-progress",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple ember addon component for displaying an amount a page is scrolled via a progress bar",
   "keywords": [
     "ember-addon"
@@ -15,7 +15,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
@@ -50,6 +51,7 @@
     "node": ">= 0.12.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://gowthamrm.github.io/ember-scroll-progress/"
   }
 }
