@@ -6,6 +6,7 @@ const { Component, run } = Ember;
 export default Component.extend({
   layout,
   canShowScrollProgress: false,
+  reduceOffsetTopBy: 0,
 
   didInsertElement() {
     this._super(...arguments);
@@ -45,9 +46,10 @@ export default Component.extend({
 
     let contentHeight = content && content.height();
     let windowHeight = this.$(window).height();
+    let reduceOffsetTopBy = this.get('reduceOffsetTopBy');
 
     let scrollTop = this.$(window).scrollTop();
-    let maxScroll = contentHeight - windowHeight;
+    let maxScroll = contentHeight - windowHeight + reduceOffsetTopBy;
 
     let scrollWidth = (scrollTop / maxScroll) * 100;
 
