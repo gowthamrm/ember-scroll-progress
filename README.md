@@ -1,5 +1,9 @@
 # ember-scroll-progress
 
+
+[![npm version](https://badge.fury.io/js/ember-scroll-progress.svg)](https://badge.fury.io/js/ember-scroll-progress)
+[![Build Status](https://travis-ci.org/gowthamrm/ember-scroll-progress.svg?branch=master)](https://travis-ci.org/gowthamrm/ember-scroll-progress)
+
 A simple ember addon component for displaying an amount a page is scrolled via a progress bar.
 Scroll the page to view this page's progress on top.
 
