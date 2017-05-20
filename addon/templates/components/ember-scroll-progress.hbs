@@ -1,8 +1,4 @@
 <div id="scroll-container">
-  {{#if canShowScrollProgress}}
-    <div class="em-progress-bar-container {{progressContainerClass}}">
-      <div id="progress-bar" class="em-progress-bar {{progressBarClass}}"></div>
-    </div>
-  {{/if}}
+  <div id="progress-bar" class="em-progress-bar"></div>
   {{yield this}}
 </div>

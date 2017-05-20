@@ -5,13 +5,24 @@ const { Component, run } = Ember;
 
 export default Component.extend({
   layout,
-  canShowScrollProgress: false,
   reduceOffsetTopBy: 0,
+
+  initProgressBar() {
+    let $progressBar = this.$('#progress-bar');
+    let height = this.get('height') || 3;
+    let color = this.get('color') || '#000';
+
+    $progressBar.css({
+      height,
+      'background-color': color
+    });
+  },
 
   didInsertElement() {
     this._super(...arguments);
 
     run.schedule('afterRender', () => {
+      this.initProgressBar();
       this.bindEvents();
     });
   },
@@ -27,11 +38,10 @@ export default Component.extend({
    */
   bindEvents() {
     this.$(window).on('scroll', () => {
-      let progressBar = this.$('#progress-bar');
-      this.set('canShowScrollProgress', true);
+      let $progressBar = this.$('#progress-bar');
 
       // Setting the progress bar width in percentage
-      progressBar.css({
+      $progressBar.css({
         width: this.getProgressWidth()
       });
     });

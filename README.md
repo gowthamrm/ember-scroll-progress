@@ -14,8 +14,8 @@ Scroll the page to view this page's progress on top.
 ```handlebars
 
   {{#ember-scroll-progress
-    progressContainerClass="progress-container"
-    progressBarClass="progress-bar"
+    height=5
+    color="red"
     reduceOffsetTopBy=85
   }}
     <!-- page content -->
@@ -25,9 +25,9 @@ Scroll the page to view this page's progress on top.
 
 ## Parameters
 
-* `progressContainerClass` will have the custom style elements for the progress bar container. This class can be used to position the progress bar.
-* `progressBarClass` can be used to customize the progress bar.
-* `reduceOffsetTopBy` can be used to set the top offset based on the scroll container's top position inside the page.
+* `height` to customize the the height of the progress bar.
+* `color` to provide a customizable color/color code for the progress bar.
+* `reduceOffsetTopBy` to set the top offset based on the scroll container's top position inside the page.
 
 ## Installation
 
