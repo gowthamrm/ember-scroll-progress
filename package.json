@@ -1,6 +1,6 @@
 {
   "name": "ember-scroll-progress",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A simple ember addon component for displaying an amount a page is scrolled via a progress bar",
   "keywords": [
     "ember-addon"
