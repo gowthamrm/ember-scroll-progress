@@ -34,7 +34,6 @@ Scroll the page to view this page's progress on top.
 * `git clone <repository-url>` this repository
 * `cd ember-scroll-progress`
 * `npm install`
-* `bower install`
 
 ## Running
 
